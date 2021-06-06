@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Phishing Detection Website</title>
+        <!--<link rel="stylesheet" type="text/css" href="\static\style1.css" media="all">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            body{
+                    height:100vh;
+                    background-color: powderblue;
+            }
+        </style>
+    </head>
+    <body>
+            <div style="background-color:blue; height:20%;">
+
+            </div>
+            <center>
+                <div style="padding:60px;">
+                    <h1 style="font-size: 50px;">Phishing Website Detection</h1>
+                </div>
+                <form action="{{ url_for('get_bot_response')}}" method="post">
+                    <label id="msg">URL</label>
+                    <input id="textInput" type="url" name="msg" placeholder="Type URL" required>
+                    <button id="buttonInput">Check</button>
+                </form>
+            </center>
+            <div style="background-color:blue; height:20%; margin-top:12%;">
+
+            </div>
+    </body>
+</html>
